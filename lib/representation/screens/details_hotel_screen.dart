@@ -37,8 +37,8 @@ class _DetailsHotelScreenState extends State<DetailsHotelScreen> {
             minChildSize: 0.3,
             builder: (context, scrollController) {
               return Container(
-                padding: EdgeInsets.symmetric(horizontal: kMediumPadding),
-                decoration: BoxDecoration(
+                padding: const EdgeInsets.symmetric(horizontal: kMediumPadding),
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(kMediumPadding * 2),
@@ -48,18 +48,18 @@ class _DetailsHotelScreenState extends State<DetailsHotelScreen> {
                   children: [
                     Container(
                       alignment: Alignment.center,
-                      margin: EdgeInsets.only(top: kDefaultPadding),
+                      margin: const EdgeInsets.only(top: kDefaultPadding),
                       child: Container(
                         height: 5,
                         width: 60,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           borderRadius:
                               BorderRadius.all(Radius.circular(kItemPadding)),
                           color: Colors.black,
                         ),
                       ),
                     ),
-                    SizedBox(height: kMediumPadding),
+                    const SizedBox(height: kMediumPadding),
                     Expanded(
                       child: ListView(
                         controller: scrollController,
@@ -73,7 +73,7 @@ class _DetailsHotelScreenState extends State<DetailsHotelScreen> {
                                   Text(widget.hotelModels.hotelName,
                                       style: TextStyles
                                           .defaultStyle.fontHeader.bold),
-                                  Spacer(),
+                                  const Spacer(),
                                   Text(
                                       '\$${widget.hotelModels.price.toString()}',
                                       style: TextStyles
@@ -83,13 +83,13 @@ class _DetailsHotelScreenState extends State<DetailsHotelScreen> {
                                           TextStyles.defaultStyle.fontCaption),
                                 ],
                               ),
-                              SizedBox(height: kDefaultPadding),
+                              const SizedBox(height: kDefaultPadding),
                               Row(
                                 children: [
                                   ImageHelper.LoadFromAsset(
                                     AssetHelper.iconLocationBank,
                                   ),
-                                  SizedBox(width: kMinPadding),
+                                  const SizedBox(width: kMinPadding),
                                   Text(widget.hotelModels.location),
                                   Text(
                                     ' - ${widget.hotelModels.awayKilometer} from destination',
@@ -98,13 +98,13 @@ class _DetailsHotelScreenState extends State<DetailsHotelScreen> {
                                   ),
                                 ],
                               ),
-                              DashlineWidget(),
+                              const DashlineWidget(),
                               Row(
                                 children: [
                                   ImageHelper.LoadFromAsset(
                                     AssetHelper.iconStarHotel,
                                   ),
-                                  SizedBox(width: kMinPadding),
+                                  const SizedBox(width: kMinPadding),
                                   Text(
                                     widget.hotelModels.star.toString(),
                                   ),
@@ -121,45 +121,45 @@ class _DetailsHotelScreenState extends State<DetailsHotelScreen> {
                                   ),
                                 ],
                               ),
-                              DashlineWidget(),
+                              const DashlineWidget(),
                               Text(
                                 'Infomation',
                                 style: TextStyles.defaultStyle.bold,
                               ),
-                              SizedBox(height: kDefaultPadding),
-                              Text(
+                              const SizedBox(height: kDefaultPadding),
+                              const Text(
                                 '''You will find every comfort because many of the services that the hotel offers for travellers and of course the hotel is very comfortable.''',
                               ),
-                              ItemUtilityHotelWidget(),
-                              SizedBox(
+                              const ItemUtilityHotelWidget(),
+                              const SizedBox(
                                 height: kDefaultPadding,
                               ),
                               Text(
                                 'Location',
                                 style: TextStyles.defaultStyle.bold,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: kDefaultPadding,
                               ),
-                              Text(
+                              const Text(
                                 '''Located in the famous neighborhood of Seoul, Grand Luxury’s is set in a building built in the 2010s.''',
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: kDefaultPadding,
+                              ),
+                              const SizedBox(
+                                height: kMediumPadding,
                               ),
                               ImageHelper.LoadFromAsset(
                                 AssetHelper.imageMap,
                                 width: double.infinity,
-                              ),
-                              SizedBox(
-                                height: kMediumPadding,
                               ),
                               ItemButtonWidget(
                                   data: 'Select Room',
                                   onTap: () {
                                     Navigator.of(context).pushNamed(SelectRoomScreen.routeName);
                                   }),
-                              SizedBox(
+                              const SizedBox(
                                 height: kMediumPadding,
                               ),
                             ],
