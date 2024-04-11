@@ -4,7 +4,7 @@ import 'package:travelapp/core/constans/dimention/dimention_constants.dart';
 
 class DashlineWidget extends StatelessWidget {
   const DashlineWidget(
-      {super.key, this.height = 1, this.color = ColorPalatte.dividerColor});
+      {super.key, this.height = 1, this.color = ColorPalette.dividerColor});
 
   final double height;
   final Color color;

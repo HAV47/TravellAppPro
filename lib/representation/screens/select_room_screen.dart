@@ -42,7 +42,7 @@ class _SelectRoomScreenState extends State<SelectRoomScreen> {
   Widget build(BuildContext context) {
     return AppBarContainer(
       titleString: 'Select room',
-      child: SingleChildScrollView(
+      childr: SingleChildScrollView(
         child: Column(
           children: listRoom
               .map(

@@ -62,7 +62,7 @@ class ItemRoomWidget extends StatelessWidget {
               ),
               Expanded(
                 flex: 3,
-                child: ImageHelper.LoadFromAsset(roomModel.roomImage, radius: BorderRadius.circular(kItemPadding)),
+                child: ImageHelper.loadFromAsset(roomModel.roomImage, radius: BorderRadius.circular(kItemPadding)),
               ),
             ],
           ),

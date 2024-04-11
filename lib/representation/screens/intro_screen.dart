@@ -37,7 +37,7 @@ class _IntroScreenState extends State<IntroScreen> {
       children: [
         Container(
             alignment: alignment,
-            child: ImageHelper.LoadFromAsset(
+            child: ImageHelper.loadFromAsset(
               image,
               fit: BoxFit.fitHeight,
               height: 400,

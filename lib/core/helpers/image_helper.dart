@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 class ImageHelper {
-  static Widget LoadFromAsset(
+  static Widget loadFromAsset(
     String imageFilePath, {
       double? width,
       double? height,

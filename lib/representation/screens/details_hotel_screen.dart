@@ -28,7 +28,7 @@ class _DetailsHotelScreenState extends State<DetailsHotelScreen> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: ImageHelper.LoadFromAsset(AssetHelper.hotelDetails,
+            child: ImageHelper.loadFromAsset(AssetHelper.hotelDetails,
                 fit: BoxFit.fill),
           ),
           DraggableScrollableSheet(
@@ -86,7 +86,7 @@ class _DetailsHotelScreenState extends State<DetailsHotelScreen> {
                               const SizedBox(height: kDefaultPadding),
                               Row(
                                 children: [
-                                  ImageHelper.LoadFromAsset(
+                                  ImageHelper.loadFromAsset(
                                     AssetHelper.iconLocationBank,
                                   ),
                                   const SizedBox(width: kMinPadding),
@@ -101,7 +101,7 @@ class _DetailsHotelScreenState extends State<DetailsHotelScreen> {
                               const DashlineWidget(),
                               Row(
                                 children: [
-                                  ImageHelper.LoadFromAsset(
+                                  ImageHelper.loadFromAsset(
                                     AssetHelper.iconStarHotel,
                                   ),
                                   const SizedBox(width: kMinPadding),
@@ -150,7 +150,7 @@ class _DetailsHotelScreenState extends State<DetailsHotelScreen> {
                               const SizedBox(
                                 height: kMediumPadding,
                               ),
-                              ImageHelper.LoadFromAsset(
+                              ImageHelper.loadFromAsset(
                                 AssetHelper.imageMap,
                                 width: double.infinity,
                               ),

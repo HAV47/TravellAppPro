@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Travel App',
         theme: ThemeData(
-          primaryColor: ColorPalatte.primaryColor,
-          scaffoldBackgroundColor: ColorPalatte.backgroundScaffoldColor,
+          primaryColor: ColorPalette.primaryColor,
+          scaffoldBackgroundColor: ColorPalette.backgroundScaffoldColor,
           colorScheme: ColorScheme.fromSeed(
-              seedColor: ColorPalatte.backgroundScaffoldColor),
+              seedColor: ColorPalette.backgroundScaffoldColor),
         ),
         routes: routes,
         onGenerateRoute: generateRoutes,

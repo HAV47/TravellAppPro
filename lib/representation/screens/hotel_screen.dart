@@ -49,7 +49,7 @@ class _HotelScreenState extends State<HotelScreen> {
   Widget build(BuildContext context) {
     return AppBarContainer(
       titleString: 'Hotels',
-      child: SingleChildScrollView(
+      childr: SingleChildScrollView(
         child: Container(
           child: Column(
             children:

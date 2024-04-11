@@ -16,7 +16,7 @@ class SelectDateScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBarContainer(
       titleString: 'Select Date',
-      child: Container(
+      childr: Container(
         child: Column(
           children: [
             SizedBox(height: kMediumPadding),
@@ -25,11 +25,11 @@ class SelectDateScreen extends StatelessWidget {
               selectionMode: DateRangePickerSelectionMode.range,
               monthViewSettings:
                   DateRangePickerMonthViewSettings(firstDayOfWeek: 1),
-              selectionColor: ColorPalatte.yellowColor,
-              startRangeSelectionColor: ColorPalatte.yellowColor,
-              endRangeSelectionColor: ColorPalatte.yellowColor,
-              rangeSelectionColor: ColorPalatte.yellowColor.withOpacity(0.25),
-              todayHighlightColor: ColorPalatte.yellowColor,
+              selectionColor: ColorPalette.yellowColor,
+              startRangeSelectionColor: ColorPalette.yellowColor,
+              endRangeSelectionColor: ColorPalette.yellowColor,
+              rangeSelectionColor: ColorPalette.yellowColor.withOpacity(0.25),
+              todayHighlightColor: ColorPalette.yellowColor,
               toggleDaySelection: true,
               onSelectionChanged: (DateRangePickerSelectionChangedArgs args) {
                 if (args.value is PickerDateRange) {

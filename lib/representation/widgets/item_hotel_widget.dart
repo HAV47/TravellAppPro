@@ -28,7 +28,7 @@ class ItemHotelWidget extends StatelessWidget {
           Container(
             width: double.infinity,
             margin: EdgeInsets.only(right: kDefaultPadding),
-            child: ImageHelper.LoadFromAsset(
+            child: ImageHelper.loadFromAsset(
               hotelModels.hotelImages,
               radius: BorderRadius.only(
                 topLeft: Radius.circular(kDefaultPadding),
@@ -51,24 +51,24 @@ class ItemHotelWidget extends StatelessWidget {
                 SizedBox(height: kDefaultPadding),
                 Row(
                   children: [
-                    ImageHelper.LoadFromAsset(AssetHelper.iconLocationHotel),
+                    ImageHelper.loadFromAsset(AssetHelper.iconLocationHotel),
                     SizedBox(width: kMinPadding),
                     Text(hotelModels.location),
                     Text(
                       ' - ${hotelModels.awayKilometer} from destination',
-                      style: TextStyle(color: ColorPalatte.subTitleColor),
+                      style: TextStyle(color: ColorPalette.subTitleColor),
                     ),
                   ],
                 ),
                 SizedBox(height: kDefaultPadding),
                 Row(
                   children: [
-                    ImageHelper.LoadFromAsset(AssetHelper.iconStarHotel),
+                    ImageHelper.loadFromAsset(AssetHelper.iconStarHotel),
                     SizedBox(width: kMinPadding),
                     Text(hotelModels.star.toString()),
                     Text(
                       ' ( ${hotelModels.numberOfReview} review)',
-                      style: TextStyle(color: ColorPalatte.subTitleColor),
+                      style: TextStyle(color: ColorPalette.subTitleColor),
                     ),
                   ],
                 ),

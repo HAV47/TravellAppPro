@@ -28,8 +28,9 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
   Widget build(BuildContext context) {
     return AppBarContainer(
       titleString: 'Hotel Booking',
+      implementLeading: true,
       paddingContent: EdgeInsets.all(kMediumPadding),
-      child: SingleChildScrollView(
+      childr: SingleChildScrollView(
         child: Column(
           children: [
             SizedBox(
@@ -39,9 +40,7 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
                 icon: AssetHelper.iconLocation,
                 title: 'Destination',
                 description: 'South Korea'),
-            SizedBox(
-              height: kMediumPadding,
-            ),
+            SizedBox(height: kMediumPadding),
             StatefulBuilder(
               builder: (context, setState) {
                 return ItemBookingWidget(
@@ -49,8 +48,7 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
                   title: 'Select Date',
                   description: dateSelected ?? '13 Feb - 18 Feb 2021',
                   onTap: () {
-                    Navigator.of(context)
-                        .pushNamed(SelectDateScreen.routeName);
+                    Navigator.of(context).pushNamed(SelectDateScreen.routeName);
                   },
                 );
               },

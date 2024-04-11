@@ -46,7 +46,7 @@ class _ItemAddGuestAndRoomState extends State<ItemAddGuestAndRoom> {
       padding: EdgeInsets.all(kMediumPadding),
       child: Row(
         children: [
-          ImageHelper.LoadFromAsset(widget.icon),
+          ImageHelper.loadFromAsset(widget.icon),
           SizedBox(
             height: kMediumPadding,
           ),
@@ -64,7 +64,7 @@ class _ItemAddGuestAndRoomState extends State<ItemAddGuestAndRoom> {
                 });
               }
             },
-            child: ImageHelper.LoadFromAsset(AssetHelper.iconDecrease),
+            child: ImageHelper.loadFromAsset(AssetHelper.iconDecrease),
           ),
           Container(
             height: 35,
@@ -102,7 +102,7 @@ class _ItemAddGuestAndRoomState extends State<ItemAddGuestAndRoom> {
                 }
               });
             },
-            child: ImageHelper.LoadFromAsset(AssetHelper.iconIncrease),
+            child: ImageHelper.loadFromAsset(AssetHelper.iconIncrease),
           ),
         ],
       ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ColorPalatte {
+class ColorPalette {
   static const Color primaryColor = Color(0xff6357CC);
   static const Color secondColor = Color(0xff8F67E8);
   static const Color yellowColor = Color(0xffFE9C5E);
@@ -15,8 +15,8 @@ class Gradients {
 begin: Alignment.topLeft,
 end: Alignment.bottomLeft,
     colors: [
-      ColorPalatte.secondColor,
-      ColorPalatte.primaryColor,
+      ColorPalette.secondColor,
+      ColorPalette.primaryColor,
     ]
   );
 }

@@ -26,7 +26,7 @@ class _GuestAndRoomBookingScreenState extends State<GuestAndRoomBookingScreen> {
     return AppBarContainer(
       titleString: 'Add guest and room',
       paddingContent: EdgeInsets.all(kMediumPadding),
-      child: Column(
+      childr: Column(
         children: [
           SizedBox(height: kMediumPadding),
           ItemAddGuestAndRoom(

@@ -9,7 +9,7 @@ import 'package:travelapp/core/helpers/image_helper.dart';
 class AppBarContainer extends StatelessWidget {
   const AppBarContainer({
     super.key,
-    required this.child,
+    required this.childr,
     this.title,
     this.implementLeading = false,
     this.titleString,
@@ -20,7 +20,7 @@ class AppBarContainer extends StatelessWidget {
     ),
   });
 
-  final Widget child;
+  final Widget childr;
   final Widget? title;
   final String? titleString;
   final String? subTitleString;
@@ -34,13 +34,13 @@ class AppBarContainer extends StatelessWidget {
       body: Stack(
         children: [
           SizedBox(
-            height: 186,
+            height: 200,
             child: AppBar(
               centerTitle: true,
               automaticallyImplyLeading: false,
               elevation: 0,
               toolbarHeight: 90,
-              backgroundColor: ColorPalatte.backgroundScaffoldColor,
+              backgroundColor: ColorPalette.backgroundScaffoldColor,
               title: title ??
                   Row(
                     children: [
@@ -107,11 +107,11 @@ class AppBarContainer extends StatelessWidget {
                   Positioned(
                       top: 0,
                       left: 0,
-                      child: ImageHelper.LoadFromAsset(AssetHelper.oval_1)),
+                      child: ImageHelper.loadFromAsset(AssetHelper.oval_1)),
                   Positioned(
                       bottom: 0,
                       right: 0,
-                      child: ImageHelper.LoadFromAsset(AssetHelper.oval_2)),
+                      child: ImageHelper.loadFromAsset(AssetHelper.oval_2)),
                 ],
               ),
             ),
@@ -119,7 +119,7 @@ class AppBarContainer extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(top: 156),
             padding: paddingContent,
-            child: child,
+            child: childr,
           ),
         ],
       ),

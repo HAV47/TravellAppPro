@@ -16,7 +16,7 @@ class ItemUtilityHotelWidget extends StatelessWidget {
   Widget _buildItemUtilityHotelWidget({required String icon, required String name}) {
     return Column(
       children: [
-        ImageHelper.LoadFromAsset(
+        ImageHelper.loadFromAsset(
           icon,
         ),
         SizedBox(

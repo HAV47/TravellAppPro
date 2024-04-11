@@ -5,7 +5,6 @@ import 'package:travelapp/core/constans/text_style.dart';
 import 'package:travelapp/core/helpers/asset_helper.dart';
 import 'package:travelapp/core/helpers/image_helper.dart';
 import 'package:travelapp/representation/screens/hotel_booking_screen.dart';
-import 'package:travelapp/representation/screens/hotel_screen.dart';
 import 'package:travelapp/representation/widgets/app_bar_container.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -74,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Stack(
           alignment: Alignment.topRight,
           children: [
-            ImageHelper.LoadFromAsset(
+            ImageHelper.loadFromAsset(
               image,
               width: double.infinity,
               fit: BoxFit.fitWidth,
@@ -175,12 +174,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius: BorderRadius.circular(kTopPadding),
                 color: Colors.white,
               ),
-              child: ImageHelper.LoadFromAsset(AssetHelper.avtt),
+              child: ImageHelper.loadFromAsset(AssetHelper.avtt),
             ),
           ],
         ),
       ),
-      child: Column(
+      childr: Column(
         children: [
           const TextField(
             decoration: InputDecoration(
@@ -213,7 +212,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Expanded(
                 child: _builtItemCategory(
-                    ImageHelper.LoadFromAsset(AssetHelper.icon_hotel,
+                    ImageHelper.loadFromAsset(AssetHelper.icon_hotel,
                         width: kBottomBarIconsize, height: kBottomBarIconsize),
                     Color(0xffFE9C5E), () {
                   // Navigator.of(context).pushNamed(HotelBookingScreen.routeName);
@@ -224,7 +223,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Expanded(
                 child: _builtItemCategory(
-                    ImageHelper.LoadFromAsset(AssetHelper.icon_plane,
+                    ImageHelper.loadFromAsset(AssetHelper.icon_plane,
                         width: kBottomBarIconsize, height: kBottomBarIconsize),
                     Color(0xffF77777),
                     () {},
@@ -235,7 +234,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Expanded(
                 child: _builtItemCategory(
-                    ImageHelper.LoadFromAsset(AssetHelper.icon_all,
+                    ImageHelper.loadFromAsset(AssetHelper.icon_all,
                         width: kBottomBarIconsize, height: kBottomBarIconsize),
                     Color(0xff3EC8BC),
                     () {},

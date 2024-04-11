@@ -6,7 +6,7 @@ class TextStyles {
   BuildContext? context;
   static const TextStyle defaultStyle = TextStyle(
     fontSize: 14,
-    color: ColorPalatte.textColor,
+    color: ColorPalette.textColor,
     fontWeight: FontWeight.w400,
     height: 16/14,
   );
@@ -54,11 +54,11 @@ extension ExtendedTextStyle on TextStyle {
   }
 
   TextStyle get textColor {
-    return copyWith(color: ColorPalatte.textColor);
+    return copyWith(color: ColorPalette.textColor);
   }
 
   TextStyle get primaryTextColor {
-    return copyWith(color: ColorPalatte.primaryColor);
+    return copyWith(color: ColorPalette.primaryColor);
   }
 
   TextStyle get whiteTextColor {
@@ -66,7 +66,7 @@ extension ExtendedTextStyle on TextStyle {
   }
 
   TextStyle get subTitleTextColor {
-    return copyWith(color: ColorPalatte.subTitleColor);
+    return copyWith(color: ColorPalette.subTitleColor);
   }
 
   // convenience functions

@@ -20,7 +20,7 @@ final Map<String, WidgetBuilder> routes = {
   SelectDateScreen.routeName: (context) => SelectDateScreen(),
   GuestAndRoomBookingScreen.routeName: (context) =>
       const GuestAndRoomBookingScreen(),
-  SelectRoomScreen.routeName: (context) => SelectRoomScreen(),
+  SelectRoomScreen.routeName: (context) => const SelectRoomScreen(),
 
 };
 

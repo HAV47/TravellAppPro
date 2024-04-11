@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Stack(
       children: [
         Positioned.fill(
-          child: ImageHelper.LoadFromAsset(AssetHelper.imageBackGroundSplash, fit: BoxFit.fitWidth),
+          child: ImageHelper.loadFromAsset(AssetHelper.imageBackGroundSplash, fit: BoxFit.fitWidth),
         ),
         Positioned.fill(child: Image.asset(AssetHelper.cirrclesplash))
       ],

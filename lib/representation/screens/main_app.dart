@@ -44,8 +44,8 @@ class _MainAppState extends State<MainApp> {
             _curentIndex = index;
           });
         },
-        unselectedItemColor: ColorPalatte.primaryColor.withOpacity(0.2),
-        selectedItemColor: ColorPalatte.primaryColor,
+        unselectedItemColor: ColorPalette.primaryColor.withOpacity(0.2),
+        selectedItemColor: ColorPalette.primaryColor,
         margin: EdgeInsets.symmetric(horizontal: kMediumPadding,vertical: kDefaultPadding),
         items: [
           SalomonBottomBarItem(

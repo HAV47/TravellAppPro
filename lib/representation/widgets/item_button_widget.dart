@@ -28,7 +28,7 @@ class ItemButtonWidget extends StatelessWidget {
           style: color == null
               ? TextStyles.defaultStyle.whiteTextColor.bold
               : TextStyles.defaultStyle.bold.copyWith(
-            color: ColorPalatte.primaryColor,
+            color: ColorPalette.primaryColor,
           ),
         ),
       ),
